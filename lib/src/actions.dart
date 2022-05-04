@@ -143,7 +143,7 @@ class SlidableAction extends StatelessWidget {
   final SlidableActionCallback? onPressed;
 
   /// An icon to display above the [label].
-  final IconData? icon;
+  final Widget? icon;
 
   /// The space between [icon] and [label] if both set.
   ///
@@ -159,7 +159,7 @@ class SlidableAction extends StatelessWidget {
 
     if (icon != null) {
       children.add(
-        Icon(icon),
+        icon,
       );
     }
 
